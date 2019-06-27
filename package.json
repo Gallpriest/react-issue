@@ -9,12 +9,12 @@
   "author": "Anton Datsuk",
   "license": "ISC",
   "devDependencies": {
+    "@types/classnames": "^2.2.8",
     "@types/react": "^16.8.22",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.4",
     "babel-loader": "^8.0.6",
     "classnames": "^2.2.6",
-    "css-modules-typescript-loader": "^2.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "source-map-loader": "^0.2.4",

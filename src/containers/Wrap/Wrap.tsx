@@ -1,6 +1,6 @@
 import React from 'react';
 import Issue from '../Issue/Issue';
-import styles from './Wrap.styles.css';
+import styles from './Wrap';
 
 class Wrap extends React.Component {
   render() {

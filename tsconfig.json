@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "./dist/bundle.js",
     "sourceMap": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -10,10 +10,10 @@
     "allowSyntheticDefaultImports": true,
     "module": "ESNext",
     "moduleResolution": "node",
-    "baseUrl": "./src/"
+    "baseUrl": "./src/",
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
   ],
   "exclude": [
     "./node_modules"
