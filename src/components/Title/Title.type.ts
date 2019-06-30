@@ -1,10 +1,7 @@
+import { Tag } from '../../containers/Issue/Issue.type';
+
 export type Title = {
   name: string;
-  issues: Issue[];
+  tags: Tag[];
   creator: string;
-}
-
-type Issue = {
-  id: number;
-  type: 'string';
 }

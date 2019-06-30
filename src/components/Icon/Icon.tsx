@@ -3,9 +3,9 @@ import { IconImage } from './Icon.styled';
 import * as T from './Icon.type';
 
 function Icon(props: T.Icon) {
-  const { imgURL, size } = props;
+  const { imgURL, size, style } = props;
   return (
-    <IconImage src={imgURL}/>
+    <IconImage className={style} src={imgURL}/>
   )
 }
 
