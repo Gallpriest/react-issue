@@ -1,11 +1,17 @@
 import React from 'react';
-import styles from './Status';
+import * as T from './Status.type';
+import { StatusIcon } from './Status.styled';
+import Icon from 'components/Icon/Icon';
 
-function Status(props) {
+function Status(props: T.Status) {
+  const { status } = props;
+  const statusURL = status === 'warning' ? 'src/assets/warning.svg' : 'src/assets/success.svg'
   return (
-    <div className={styles.status}>
-      Test
-    </div>
+    <StatusIcon>
+      <Icon
+        size="default"
+        imgURL={statusURL} />
+    </StatusIcon>
   )
 }
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import Issue from '../Issue/Issue';
-import styles from './Wrap';
+import { Wrapper } from './Wrap.styled';
 
 class Wrap extends React.Component {
   render() {
     return (
-      <div className={styles.wrap}>
+      <Wrapper>
         <Issue />
-      </div>
+      </Wrapper>
     )
   }
 }

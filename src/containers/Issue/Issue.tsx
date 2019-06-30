@@ -1,14 +1,15 @@
 import React from 'react';
-import styles from './Issue';
+import { IssueWrap, IssueStatus } from './Issue.styled';
+import Status from '../../components/Status/Status';
 
 class Issue extends React.Component {
   render() {
     return (
-      <div className={styles.issue}>
-        <div className={styles.issue__status}>
-          Test
-        </div>
-      </div>
+      <IssueWrap>
+        <IssueStatus>
+          <Status status="warning" />
+        </IssueStatus>
+      </IssueWrap>
     )
   }
 }
