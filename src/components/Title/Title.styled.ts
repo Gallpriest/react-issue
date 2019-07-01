@@ -8,9 +8,17 @@ export const TitleName = styled.div`
   margin-right: var(--size-big);
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
 `;
 
-export const TitleTags = styled.div`
+export const TitleFlexbox = styled.div`
   display: flex;
   flex-wrap: wrap;
-`
+`;
+
+export const TitleCreator = styled.div`
+  font-size: 14px;
+  color: #000;
+  opacity: .7;
+  letter-spacing: 0.6px;
+`;

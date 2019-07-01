@@ -2,9 +2,12 @@ import styled from 'styled-components';
 
 export const TagBlock = styled.div`
   display: inline-block;
-  font-size: 14px;
-  color: #fff;
-  background-color: red;
+  user-select: none;
+  font-size: 12px;
+  color:  ${props => props.theme.color};
+  background: ${props => props.theme.backgroundColor};
   padding: var(--size-small);
   border-radius: 2px;
-`
+  margin-right: var(--size-small);
+  margin-bottom: var(--size-small);
+`;
