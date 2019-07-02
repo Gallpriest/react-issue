@@ -1,10 +1,11 @@
 import React from 'react';
-import { IssueWrap, IssueStatus, IssueTitle, IssueAvatars } from './Issue.styled';
+import { IssueWrap, IssueStatus, IssueTitle, IssueAvatars, IssueComments } from './Issue.styled';
 import * as T from './Issue.type';
 import { issueMockData } from './Issue.mock';
 import Status from 'components/Status/Status';
 import Title from 'components/Title/Title';
 import AvatarGroup from 'components/AvatarGroup/AvatarGroup';
+import Comments from 'components/Comments/Comments';
 
 class Issue extends React.Component {
   constructor(props: T.IssueData) {
@@ -17,7 +18,8 @@ class Issue extends React.Component {
     return (
       <IssueWrap>
         <IssueStatus>
-          <Status status={issueInformation.status} />
+          <Status
+            status={issueInformation.status} />
         </IssueStatus>
         <IssueTitle>
           <Title
@@ -26,8 +28,13 @@ class Issue extends React.Component {
             tags={issueInformation.tags}/>
         </IssueTitle>
         <IssueAvatars>
-          <AvatarGroup participants={issueInformation.participants}/>
+          <AvatarGroup
+            participants={issueInformation.participants}/>
         </IssueAvatars>
+        <IssueComments>
+          <Comments
+            comments={issueInformation.comments} />
+        </IssueComments>
       </IssueWrap>
     )
   }

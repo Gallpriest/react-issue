@@ -1,5 +1,7 @@
 const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const APP_DIR = path.resolve(__dirname, './src');
 const PACKAGES_DIR = path.resolve(__dirname, './node_modules');
@@ -12,7 +14,15 @@ module.exports = {
     filename: "./bundle.js"
   },
   resolve: {
-    plugins: [new TsconfigPathsPlugin({ configFile: path.resolve(__dirname, './tsconfig.json') })],
+    plugins:
+    [
+      // new CopyWebpackPlugin([{
+      //   from: 'src/**/**',
+      //   to: path.resolve(__dirname, './dist/')
+      // }]),
+      // new ImageminPlugin(),
+      new TsconfigPathsPlugin({ configFile: path.resolve(__dirname, './tsconfig.json') }),
+    ],
     modules: [APP_DIR, PACKAGES_DIR],
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.pcss', '.css']
   },

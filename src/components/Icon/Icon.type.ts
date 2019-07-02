@@ -1,5 +1,5 @@
 export type Icon = {
   imgURL: string;
   size?: 'small' | 'default';
-  theme?: string;
+  theme?: {};
 }

@@ -2,4 +2,4 @@ export type AvatarGroup = {
   participants: Person[];
 };
 
-type Person = { person: string };
+export type Person = { person: string, id: number };

@@ -8,7 +8,7 @@ function Status(props: T.Status) {
   const statusURL = status === 'warning' ? 'src/assets/warning.svg' : 'src/assets/success.svg'
   return (
     <StatusIcon>
-      <Icon size="default" imgURL={statusURL} />
+      <Icon size="small" imgURL={statusURL} />
     </StatusIcon>
   )
 }

@@ -10,8 +10,22 @@ export const issueMockData = {
     // { id: '5', name: 'needs investigation' },
   ],
   participants: [
-    { person: 'src/assets/people/person_1.jpg' },
-    { person: 'src/assets/people/person_2.jpg' },
-    { person: 'src/assets/people/person_3.jpg' }
-  ]
+    { person: 'src/assets/people/person_2.jpg', id: 1 },
+    { person: 'src/assets/people/person_2.jpg', id: 2 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 2 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 2 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 2 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 2 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+    { person: 'src/assets/people/person_2.jpg', id: 3 },
+  ],
+  comments: ['comment 1', 'comment 2', 'comment 3', 'comment 4', 'comment 5']
 }
