@@ -4,7 +4,7 @@ import * as T from './Comments.type';
 import Icon from 'components/Icon/Icon';
 
 function Comments(props: T.Comments) {
-  const commentsNumber = props.comments.length;
+  const commentsNumber = props.comments;
   return (
     <CommentsLink>
       <Icon size="small" imgURL="src/assets/comment.svg"  />

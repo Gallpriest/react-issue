@@ -4,16 +4,16 @@ import { TitleName, TitleFlexbox, TitleCreator } from './Title.styled';
 import Tag from 'components/Tag/Tag';
 
 function Title(props: T.Title) {
-  const { name, tags, creator } = props;
-  const tagList = tags.map(item => <Tag key={item.id} id={item.id} name={item.name} />);
+  const { title, labels, creator, number } = props;
+  const tagList = labels.map((item: any) => <Tag key={item.id} id={item.id} name={item.name} />);
   const titleStyles = { paddingBottom: 'var(--size-small)', paddingRight: 'var(--size-small)' };
   return (
       <TitleName>
         <TitleFlexbox>
-          <span style={titleStyles}>{ name }</span>
+          <span style={titleStyles}>{ title }</span>
           <TitleFlexbox> { tagList } </TitleFlexbox>
         </TitleFlexbox>
-        <TitleCreator>#7255 opened 4 days ago by {creator}</TitleCreator>
+        <TitleCreator>#{number} opened 4 days ago by {creator}</TitleCreator>
       </TitleName>
   )
 }

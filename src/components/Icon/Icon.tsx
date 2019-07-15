@@ -3,10 +3,9 @@ import { IconImage } from './Icon.styled';
 import * as T from './Icon.type';
 
 function Icon(props: T.Icon) {
-  const { imgURL, size, theme } = props;
-  const iconWidth = size === 'small' ? '20px' : '30px';
+  const { imgURL } = props;
   return (
-    <IconImage width={iconWidth} src={imgURL}/>
+    <IconImage src={imgURL}/>
   )
 }
 

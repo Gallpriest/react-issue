@@ -1,3 +1,3 @@
 export type Comments = {
-  comments: string[];
+  comments: number;
 }

@@ -6,6 +6,7 @@ export const IssueWrap = styled.div`
   padding: var(--size-medium) var(--size-medium) 0;
   border: 1px solid #bdc3c7;
   border-radius: 4px;
+  margin-bottom: var(--size-medium);
 `;
 
 export const IssueStatus = styled.div`

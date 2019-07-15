@@ -1,5 +1,5 @@
 export type AvatarGroup = {
-  participants: Person[];
+  assignees: [];
 };
 
 export type Person = { person: string, id: number };

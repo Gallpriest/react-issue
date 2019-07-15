@@ -1,7 +1,6 @@
-import { Tag } from '../../containers/Issue/Issue.type';
-
 export type Title = {
-  name: string;
-  tags: Tag[];
+  title: string;
+  labels: [];
   creator: string;
+  number: number
 }

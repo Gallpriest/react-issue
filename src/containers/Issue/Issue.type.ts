@@ -1,12 +1,10 @@
 export type IssueData = {
-  status: string;
-  name: string,
+  state: string;
+  title: string,
   creator: string,
-  tags: Tag[],
-  participants: Person[],
-  comments: string[]
+  labels: [],
+  assignees: [],
+  comments: number,
+  number: number
 };
 
-export type Tag = { id: string; name: string };
-
-type Person = { person: string, id: number };

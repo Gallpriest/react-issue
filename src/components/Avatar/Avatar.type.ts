@@ -1,3 +1,3 @@
 export type Avatar = {
-  person: string;
+  assignee: string;
 }

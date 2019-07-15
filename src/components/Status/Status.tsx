@@ -5,10 +5,10 @@ import Icon from 'components/Icon/Icon';
 
 function Status(props: T.Status) {
   const { status } = props;
-  const statusURL = status === 'warning' ? 'src/assets/warning.svg' : 'src/assets/success.svg'
+  const statusURL = status === 'closed' ? 'src/assets/closed.svg' : 'src/assets/success.svg'
   return (
     <StatusIcon>
-      <Icon size="small" imgURL={statusURL} />
+      <Icon imgURL={statusURL} />
     </StatusIcon>
   )
 }
